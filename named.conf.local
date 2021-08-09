@@ -1,0 +1,13 @@
+// this allows connecting to the exporter
+statistics-channels {
+    inet 127.0.0.1 port 8053 allow { localhost; };
+};
+
+logging {
+    channel default_stderr {
+        stderr;
+        severity info;
+    };
+
+    category default { default_stderr; };
+};
