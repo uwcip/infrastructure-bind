@@ -4,12 +4,5 @@ options {
     recursion yes;
     allow-query { localhost; };
     listen-on { localhost; };
-
-    // get our requests off of the UW campus network.
-    // use google, then cloudflare, then google.
-    forwarders {
-        8.8.8.8;
-        1.1.1.1;
-        8.8.4.4;
-    };
+    listen-on-v6 { localhost; };
 };
