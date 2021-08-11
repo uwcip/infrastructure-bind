@@ -3,6 +3,7 @@ statistics-channels {
     inet 127.0.0.1 port 8053 allow { localhost; };
 };
 
+// send logs to stderr so that the container engine can get them
 logging {
     channel default_stderr {
         stderr;
