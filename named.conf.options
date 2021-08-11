@@ -2,8 +2,8 @@ options {
     directory "/var/cache/bind";
 
     recursion yes;
-    allow-query { localhost; };
-    listen-on { localhost; };
+    listen-on { 127.0.0.1; };
+    dnssec-validation auto;
 
     // get our requests off of the UW campus network.
     // use google, then cloudflare, then google.
